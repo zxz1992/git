@@ -33,3 +33,16 @@ $ git init
 Initialized empty Git repository in /Users/michael/learngit/.git/
 ```
 瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。
+#### 三、添加文件到Git仓库
+分两步：
+* 第一步，使用命令`git add <file>`，注意，可反复多次使用，添加多个文件；
+```
+$ git add readme.txt
+```
+* 第二步，使用命令`git commit`，完成。
+```
+$ git commit -m "wrote a readme file"
+[master (root-commit) cb926e7] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+ ```
